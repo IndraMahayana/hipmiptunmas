@@ -1,5 +1,5 @@
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 
 const announcements = [
   {
@@ -18,7 +18,6 @@ export default function Announcement() {
   const [isOpen, setIsOpen] = useState(true);
   const [activeIndex, setActiveIndex] = useState(0);
   const [touchStart, setTouchStart] = useState(null);
-  const dialogRef = useRef(null);
 
   const showPrevious = useCallback(() => {
     setActiveIndex(
@@ -27,16 +26,6 @@ export default function Announcement() {
   }, []);
   const showNext = useCallback(() => {
     setActiveIndex((index) => (index + 1) % announcements.length);
-  }, []);
-
-  useEffect(() => {
-    const handleDocumentClick = (event) => {
-      const link = event.target.closest("a[href]");
-      if (link && !dialogRef.current?.contains(link)) setIsOpen(true);
-    };
-
-    document.addEventListener("click", handleDocumentClick);
-    return () => document.removeEventListener("click", handleDocumentClick);
   }, []);
 
   useEffect(() => {
@@ -64,7 +53,6 @@ export default function Announcement() {
   return (
     <div className="announcement-backdrop">
       <section
-        ref={dialogRef}
         className="announcement-dialog"
         role="dialog"
         aria-modal="true"
