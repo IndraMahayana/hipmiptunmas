@@ -13,32 +13,32 @@ const programs = [
     icon: Lightbulb,
     title: "Business Visit & Sharing",
     description:
-      "Kelas praktis dan sesi berbagi untuk mengasah pola pikir serta keterampilan membangun bisnis.",
-    tag: "Belajar",
+      "Wadah pembelajaran praktis dan sesi berbagi pengalaman langsung dari para praktisi untuk mengasah mindset wirausaha.",
+    tag: "BELAJAR",
   },
   {
     number: "02",
     icon: Handshake,
-    title: "Business Connect",
+    title: "Mentoring Business & Networking",
     description:
-      "Temukan partner, mentor, dan peluang kolaborasi lewat ruang temu yang suportif.",
-    tag: "Terhubung",
+      "Temukan mitra bisnis, mentor berpengalaman, dan peluang kolaborasi baru dalam ekosistem yang mendukung.",
+    tag: "TERHUBUNG",
   },
   {
     number: "03",
     icon: Rocket,
-    title: "Youngpreneur Lab",
+    title: "Expo & Startup Incubation",
     description:
-      "Ruang uji ide untuk mengubah gagasan segar menjadi solusi dan usaha yang berkelanjutan.",
-    tag: "Bertumbuh",
+      "Program inkubasi dan pameran karya untuk mematangkan ide bisnis menjadi usaha yang bernilai serta berkelanjutan.",
+    tag: "BERTUMBUH",
   },
   {
     number: "04",
     icon: Compass,
-    title: "Impact Project",
+    title: "Seminar & Community Action",
     description:
-      "Aksi nyata bersama komunitas untuk menghadirkan dampak positif di sekitar kita.",
-    tag: "Berdampak",
+      "Aksi nyata berbasis wirausaha sosial untuk memberikan solusi dan dampak positif bagi masyarakat.",
+    tag: "BERDAMPAK",
   },
 ];
 
@@ -52,14 +52,15 @@ export default function ProgramsSection() {
               <span className="eyebrow-dot" /> 02 / PROGRAM KERJA
             </div>
             <h2>
-              Ruang untuk ide,
+              Ruang untuk Ide,
               <br />
-              <span>aksi, dan koneksi.</span>
+              <span>Aksi, dan Koneksi.</span>
             </h2>
           </div>
           <p>
-            Program yang dirancang untuk membekali, mempertemukan, dan mendorong
-            pengusaha muda kampus melangkah lebih jauh.
+            Program strategis yang dirancang untuk membekali keterampilan,
+            memperluas jejaring, dan mengakselerasi potensi wirausaha mahasiswa
+            Unmas Denpasar.
           </p>
         </div>
         <div className="program-grid">
@@ -84,11 +85,11 @@ export default function ProgramsSection() {
         </div>
         <div className="program-footnote">
           <span>
-            *Nama dan deskripsi program dapat disesuaikan dengan agenda resmi
-            HIPMI PTUNMAS.
+            *Nama dan agenda program disesuaikan dengan kalender kegiatan resmi
+            HIPMI PT UNMAS.
           </span>
           <a className="text-link" href="#kontak">
-            Punya ide program? <ArrowRight size={15} />
+            Punya Ide Program? <ArrowRight size={15} />
           </a>
         </div>
       </div>
