@@ -10,39 +10,39 @@ export default function AboutSection() {
         </div>
         <div className="intro-content">
           <div className="eyebrow">
-            <span className="eyebrow-dot" /> Kenalan lebih dekat
+            <span className="eyebrow-dot" /> KENALI KAMI LEBIH DEKAT
           </div>
           <h2>
-            Bukan cuma organisasi.
+            Bukan Sekadar Organisasi,
             <br />
-            <span>Ini tempat kamu bertumbuh.</span>
+            <span>Ini Tempat Kamu Bertumbuh.</span>
           </h2>
           <div className="intro-bottom">
             <p>
-              HIPMI PTUNMAS adalah ruang kolaborasi bagi mahasiswa yang ingin
-              belajar dunia usaha, saling membuka peluang, dan menciptakan
-              perubahan. Di sini, setiap langkah kecil punya ruang untuk jadi
-              sesuatu yang besar.
+              HIPMI PT UNMAS adalah ruang kolaborasi bagi mahasiswa yang ingin
+              belajar dunia usaha, membuka peluang baru, dan menciptakan
+              perubahan. Di sini, setiap langkah kecil memiliki ruang untuk
+              menjadi sesuatu yang besar.
             </p>
             <a className="text-link" href="#kontak">
-              Cerita kami <ArrowUpRight size={16} />
+              Selengkapnya <ArrowUpRight size={16} />
             </a>
           </div>
           <div className="values-row">
             <div>
               <span className="value-number">01</span>
-              <strong>Berani mencoba</strong>
-              <small>Mulai dari ide sederhana.</small>
+              <strong>Berani Mencoba</strong>
+              <small>Dimulai dari ide yang sederhana.</small>
             </div>
             <div>
               <span className="value-number">02</span>
-              <strong>Tumbuh bersama</strong>
-              <small>Belajar tak harus sendiri.</small>
+              <strong>Tumbuh Bersama</strong>
+              <small>Belajar dan berkembang tidak harus sendiri.</small>
             </div>
             <div>
               <span className="value-number">03</span>
-              <strong>Berdampak nyata</strong>
-              <small>Karya yang berarti.</small>
+              <strong>Berdampak Nyata</strong>
+              <small>Menciptakan karya yang bernilai dan bermanfaat.</small>
             </div>
           </div>
         </div>
