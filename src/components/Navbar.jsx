@@ -19,16 +19,16 @@ export default function Navbar() {
           className="brand"
           href="#beranda"
           onClick={closeMenu}
-          aria-label="HIPMI PTUNMAS, ke beranda"
+          aria-label="HIPMI PT UNIVERSITAS MAHASARASWATI, ke beranda"
         >
           <img
             className="brand-logo"
             src="/logo.png"
-            alt="Logo HIPMI PTUNMAS"
+            alt="Logo HIPMI PT UNIVERSITAS MAHASARASWATI"
           />
           <span className="brand-copy">
             <strong>HIPMI</strong>
-            <small>PTUNMAS</small>
+            <small>PT UNIVERSITAS MAHASARASWATI</small>
           </span>
         </a>
         <button
