@@ -39,7 +39,7 @@ export default function Footer() {
         </nav>
       </div>
       <div className="shell footer-bottom">
-        <span>© {new Date().getFullYear()} HIPMI PTUNMAS. Tumbuh bersama.</span>
+        <span>© {new Date().getFullYear()} HIPMI PT UNMAS. Tumbuh bersama.</span>
         <span>
           Dibuat dengan semangat kolaborasi{" "}
           <span className="footer-heart">✳</span>

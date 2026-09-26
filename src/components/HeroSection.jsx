@@ -36,10 +36,9 @@ export default function HeroSection() {
           </div>
           <div className="hero-social-proof">
             <div className="avatar-stack" aria-hidden="true">
-              <span>R</span>
-              <span>A</span>
-              <span>D</span>
-              <span>+</span>
+              <img src="/foto/Profile1.webp" alt="" />
+              <img src="/foto/profile2.webp" alt="" />
+              <img src="/foto/profile3.webp" alt="" />
             </div>
             <div>
               <strong>Energi Muda, Potensi Tanpa Batas</strong>

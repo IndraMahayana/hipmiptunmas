@@ -315,28 +315,13 @@ button {
   display: flex;
   padding-left: 2px;
 }
-.avatar-stack span {
+.avatar-stack img {
   width: 28px;
   height: 28px;
   margin-left: -4px;
   border: 2px solid var(--forest);
   border-radius: 50%;
-  display: grid;
-  place-items: center;
-  background: #d3e6d9;
-  color: var(--forest);
-  font-size: 9px;
-  font-weight: 800;
-}
-.avatar-stack span:nth-child(2) {
-  background: #7eb091;
-}
-.avatar-stack span:nth-child(3) {
-  background: #ecd8b6;
-}
-.avatar-stack span:nth-child(4) {
-  background: #2f7d5b;
-  color: white;
+  object-fit: cover;
 }
 .hero-social-proof div:last-child {
   display: grid;
