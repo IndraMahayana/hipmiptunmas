@@ -2,19 +2,19 @@ import CountUp from "./CountUp.jsx";
 
 const stats = [
   {
-    value: 250,
-    label: "Anggota & alumni",
-    detail: "Satu ruang, banyak cerita",
+    value: 400,
+    label: "Anggota & Alumni",
+    detail: "Satu wadah, beragam kisah sukses",
   },
   {
-    value: 18,
-    label: "Program kolaborasi",
-    detail: "Belajar sambil bertumbuh",
+    value: 29,
+    label: "Program Kolaborasi",
+    detail: "Wadah belajar dan bertumbuh",
   },
   {
-    value: 12,
-    label: "Mitra komunitas",
-    detail: "Jaringan yang saling dukung",
+    value: 34,
+    label: "Mitra & Komunitas",
+    detail: "Jaringan relasi yang saling mendukung",
   },
 ];
 
@@ -25,9 +25,9 @@ export default function StatsSection() {
         <div className="stats-heading">
           <span className="eyebrow eyebrow-light">Kita tumbuh bersama</span>
           <h2>
-            Langkah kecil,
+            Langkah Kecil,
             <br />
-            <em>arti yang besar.</em>
+            <em>Arti yang Besar.</em>
           </h2>
         </div>
         {stats.map(({ value, label, detail }) => (

@@ -655,19 +655,23 @@ button {
 .stat-item strong {
   color: #c5dfcd;
   font:
-    700 36px "Manrope",
+    700 48px "Manrope",
     sans-serif;
-  letter-spacing: -0.06em;
+  letter-spacing: -0.025em;
 }
 .stat-item span {
-  margin-top: 4px;
-  font-size: 11px;
+  margin-top: 7px;
+  font-size: 18px;
   font-weight: 700;
+  letter-spacing: 0.01em;
+  word-spacing: 2px;
 }
 .stat-item small {
-  margin-top: 5px;
+  margin-top: 7px;
   color: rgba(255, 255, 255, 0.53);
-  font-size: 9px;
+  font-size: 10px;
+  line-height: 1.5;
+  word-spacing: 1px;
 }
 
 .program-section {
@@ -1281,8 +1285,8 @@ button {
     padding: 54px 0;
   }
   .stats-grid {
-    grid-template-columns: 1fr 1fr;
-    gap: 27px 16px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px 8px;
   }
   .stats-heading {
     grid-column: 1/-1;
@@ -1291,15 +1295,28 @@ button {
     font-size: 28px;
   }
   .stat-item {
+    min-width: 0;
     min-height: 92px;
-    padding-left: 16px;
+    padding-left: 8px;
   }
   .stat-item:nth-child(2) {
     border-left: 0;
     padding-left: 0;
   }
   .stat-item strong {
-    font-size: 32px;
+    font-size: 28px;
+  }
+  .stat-item span {
+    margin-top: 5px;
+    font-size: 10px;
+    line-height: 1.35;
+    word-spacing: 0;
+  }
+  .stat-item small {
+    margin-top: 5px;
+    font-size: 8px;
+    line-height: 1.4;
+    word-spacing: 0;
   }
   .section-topline {
     display: block;
