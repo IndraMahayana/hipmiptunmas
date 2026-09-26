@@ -18,17 +18,17 @@ export default function HeroSection() {
             <span className="eyebrow-dot" /> Wadah pengusaha muda kampus
           </div>
           <h1>
-            Berani mulai.
+            Berani Mulai.
             <br />
-            <em>Bertumbuh</em> bersama.
+            <em>Bertumbuh</em> Bersama.
           </h1>
           <p className="hero-lead">
-            Tempat ide bertemu aksi. Kami menyiapkan generasi pengusaha muda
-            yang berdaya, saling menguatkan, dan membawa dampak.
+            Tempat terbaik mengubah ide bisnis menjadi aksi nyata. Wujudkan
+            potensi wirausahamu bersama ekosistem pengusaha muda Unmas Denpasar.
           </p>
           <div className="hero-actions">
             <a className="button button-lime" href="#tentang">
-              Kenali HIPMI <ArrowRight size={17} />
+              Tentang HIPMI PT <ArrowRight size={17} />
             </a>
             <a className="text-link text-link-light" href="#program">
               Jelajahi program <ArrowDown size={16} />
@@ -42,7 +42,7 @@ export default function HeroSection() {
               <span>+</span>
             </div>
             <div>
-              <strong>Energi muda, potensi tanpa batas</strong>
+              <strong>Energi Muda, Potensi Tanpa Batas</strong>
               <small>Belajar · Berjejaring · Bertumbuh</small>
             </div>
           </div>
@@ -56,7 +56,7 @@ export default function HeroSection() {
           <div className="art-sun" />
           <div className="art-panel art-panel-main">
             <div className="art-panel-top">
-              <span className="mini-label">RUANG UNTUK</span>
+              <span className="mini-label">WADAH UNTUK</span>
               <Sparkles size={18} />
             </div>
             <div className="art-display">
@@ -74,8 +74,8 @@ export default function HeroSection() {
               <Lightbulb size={17} />
             </span>
             <span>
-              <strong>Ide segar</strong>
-              <small>Jadi peluang baru</small>
+              <strong>Ide Segar</strong>
+              <small>Menjadi Peluang Bisnis</small>
             </span>
           </div>
           <div className="art-note note-bottom">
@@ -83,8 +83,8 @@ export default function HeroSection() {
               <UsersRound size={17} />
             </span>
             <span>
-              <strong>Teman seperjalanan</strong>
-              <small>Melangkah lebih jauh</small>
+              <strong>Partner Berjuang</strong>
+              <small>Melangkah Lebih Jauh</small>
             </span>
           </div>
           <div className="art-stamp">
