@@ -1,7 +1,7 @@
 import {
-  ArrowDown,
   ArrowUpRight,
   Instagram,
+  Mail,
   MapPin,
   MessageCircle,
 } from "lucide-react";
@@ -15,13 +15,13 @@ export default function ContactSection() {
             <span className="eyebrow-dot" /> 04 / KONTAK
           </div>
           <h2>
-            Punya ide besar?
+            Punya Ide Besar?
             <br />
-            <span>Mulai obrolannya.</span>
+            <span>Mulai Obrolannya.</span>
           </h2>
           <p>
-            Mau bergabung, berkolaborasi, atau sekadar bertukar cerita? Kami
-            senang mendengar darimu.
+            Ingin bergabung, berkolaborasi, atau sekadar bertukar pikiran? Kami
+            siap mendengarkan dan bertumbuh bersama.
           </p>
         </div>
         <div className="contact-grid">
@@ -30,20 +30,27 @@ export default function ContactSection() {
               <MessageCircle size={22} />
             </span>
             <div>
-              <span className="contact-label">KIRIM PESAN</span>
-              <h3>Ngobrol bareng HIPMI</h3>
+              <span className="contact-label">HUBUNGI VIA WHATSAPP</span>
+              <h3>WhatsApp</h3>
               <p>
-                Hubungi kami untuk informasi keanggotaan, kerja sama, atau
-                program.
+                Konsultasi cepat terkait keanggotaan, peluang kolaborasi, maupun
+                program kerja.
               </p>
-              <a href="mailto:sekretariat@hipmiptunmas.id">
-                sekretariat@hipmiptunmas.id <ArrowUpRight size={16} />
+              <a
+                href={`https://wa.me/6285735367805?text=${encodeURIComponent(
+                  "Halo kak!, Mau tanya-tanya dong tentang kegiatan di HIPMI PT UNMAS dan gimana cara daftarnya. Terima kasih!",
+                )}`}
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Hubungi HIPMI PT UNMAS melalui WhatsApp"
+              >
+                085735367805 <ArrowUpRight size={16} />
               </a>
             </div>
           </div>
           <a
             className="contact-card contact-card-social"
-            href="https://instagram.com"
+            href="https://www.instagram.com/hipmiptunmas/"
             target="_blank"
             rel="noreferrer"
           >
@@ -53,20 +60,28 @@ export default function ContactSection() {
             <div>
               <span className="contact-label">IKUTI CERITA KAMI</span>
               <h3>Instagram</h3>
-              <p>Update kegiatan dan cerita dari komunitas.</p>
+              <p>
+                Kabar terbaru kegiatan, info acara, dan dokumentasi komunitas.
+              </p>
             </div>
             <ArrowUpRight className="social-arrow" size={18} />
           </a>
           <div className="contact-card contact-card-address">
             <span className="contact-symbol">
-              <MapPin size={22} />
+              <Mail size={22} />
             </span>
             <div>
-              <span className="contact-label">KUNJUNGI KAMI</span>
-              <h3>Sekretariat HIPMI PTUNMAS</h3>
-              <p>Silakan hubungi kami untuk alamat dan jadwal kunjungan.</p>
-              <a href="#peta">
-                Lihat area pada peta <ArrowDown size={15} />
+              <span className="contact-label">KIRIM EMAIL</span>
+              <h3>Email</h3>
+              <p>
+                Kirimkan proposal, pertanyaan resmi, atau penawaran kerja sama.
+              </p>
+              <a
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=hipmiptunmas%40unmas.ac.id"
+                target="_blank"
+                rel="noreferrer"
+              >
+                hipmiptunmas@unmas.ac.id <ArrowUpRight size={16} />
               </a>
             </div>
           </div>
@@ -77,26 +92,25 @@ export default function ContactSection() {
               <MapPin size={18} />
             </span>
             <div>
-              <span className="contact-label">TEMUKAN KAMI</span>
-              <strong>Area Indonesia</strong>
-              <small>
-                Perbarui lokasi peta setelah alamat sekretariat terkonfirmasi.
-              </small>
+              <span className="contact-label">LOKASI SEKRETARIAT HIPMI</span>
+              <strong>Universitas Mahasaraswati Denpasar</strong>
+              <small>Denpasar, Bali</small>
             </div>
             <a
-              href="https://maps.google.com/?q=Indonesia"
+              href="https://maps.google.com/?q=Universitas+Mahasaraswati+Denpasar"
               target="_blank"
               rel="noreferrer"
-              aria-label="Buka peta Indonesia"
+              aria-label="Buka lokasi Universitas Mahasaraswati Denpasar di Google Maps"
             >
               <ArrowUpRight size={18} />
             </a>
           </div>
           <iframe
-            title="Peta area Indonesia"
-            src="https://maps.google.com/maps?q=Indonesia&t=&z=4&ie=UTF8&iwloc=&output=embed"
+            title="Peta Universitas Mahasaraswati Denpasar"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.4078205136993!2d115.22256617456816!3d-8.652706788022126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd24083356de733%3A0xb7475eff97f41ce7!2sUniversitas%20Mahasaraswati%20Denpasar!5e0!3m2!1sid!2sid!4v1790411525019!5m2!1sid!2sid"
+            allowFullScreen
             loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
+            referrerPolicy="strict-origin-when-cross-origin"
           />
         </div>
       </div>

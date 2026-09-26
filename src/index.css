@@ -1378,8 +1378,11 @@ button {
     grid-column: 1/-1;
   }
   .contact-card {
-    min-height: 220px;
-    padding: 17px;
+    min-height: 160px;
+    padding: 14px;
+  }
+  .contact-card .contact-symbol {
+    margin-bottom: 13px;
   }
   .contact-card h3 {
     font-size: 13px;
@@ -1388,8 +1391,7 @@ button {
     font-size: 9px;
   }
   .contact-card-address {
-    grid-column: 1/-1;
-    min-height: 190px;
+    min-height: 160px;
   }
   .map-panel {
     height: 260px;
@@ -1444,10 +1446,10 @@ button {
     grid-column: auto;
   }
   .contact-card {
-    min-height: 195px;
+    min-height: 135px;
   }
   .contact-card-address {
-    min-height: 195px;
+    min-height: 135px;
   }
 }
 @media (prefers-reduced-motion: reduce) {
