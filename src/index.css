@@ -1131,21 +1131,26 @@ button {
   color: #a7cbb7;
   margin-left: 4px;
 }
-.floating-join {
+.floating-promos {
   position: fixed;
   z-index: 10;
   right: 24px;
   bottom: 22px;
+}
+.floating-join {
   display: flex;
   align-items: center;
   gap: 9px;
   padding: 12px 16px;
+  border: 0;
   color: white;
   background: var(--green);
   border-radius: 30px;
   box-shadow: 0 7px 25px rgba(11, 61, 46, 0.25);
-  font-size: 10px;
-  font-weight: 700;
+  font:
+    700 10px "Manrope",
+    sans-serif;
+  cursor: pointer;
   transition:
     transform 0.2s,
     background 0.2s;
@@ -1153,6 +1158,219 @@ button {
 .floating-join:hover {
   transform: translateY(-3px);
   background: var(--forest);
+}
+.floating-promo-panel {
+  position: absolute;
+  right: 0;
+  bottom: 60px;
+  width: 340px;
+  padding: 18px;
+  color: white;
+  background: #082f24;
+  border: 1px solid rgba(194, 218, 203, 0.2);
+  border-radius: 14px;
+  box-shadow: 0 14px 42px rgba(11, 37, 28, 0.3);
+  animation: promo-panel-in 0.2s ease-out;
+}
+.floating-promo-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  padding-bottom: 13px;
+}
+.floating-promo-heading span {
+  color: #a9cbb6;
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+}
+.floating-promo-heading h2 {
+  margin: 5px 0 0;
+  font:
+    700 17px "Manrope",
+    sans-serif;
+}
+.floating-promo-close {
+  display: grid;
+  width: 30px;
+  height: 30px;
+  flex: 0 0 30px;
+  place-items: center;
+  color: rgba(255, 255, 255, 0.75);
+  background: rgba(255, 255, 255, 0.08);
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.floating-promo-item {
+  display: grid;
+  gap: 10px;
+  padding: 14px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.13);
+}
+.floating-promo-item h3 {
+  margin: 0 0 4px;
+  color: #d8e9de;
+  font:
+    700 12px "Manrope",
+    sans-serif;
+}
+.floating-promo-item p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.66);
+  font-size: 10px;
+  line-height: 1.6;
+}
+.floating-promo-item a {
+  display: inline-flex;
+  width: fit-content;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 11px;
+  color: #082f24;
+  background: #c2dacb;
+  border-radius: 20px;
+  font-size: 9px;
+  font-weight: 800;
+  transition: background 0.2s;
+}
+.floating-promo-item a:hover {
+  background: white;
+}
+.announcement-backdrop {
+  position: fixed;
+  z-index: 30;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  background: rgba(3, 20, 14, 0.78);
+  backdrop-filter: blur(5px);
+  animation: announcement-fade-in 0.2s ease-out;
+}
+.announcement-dialog {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: min(520px, 100%);
+  max-height: 92vh;
+  padding: 12px 12px 10px;
+  overflow: hidden;
+  background: #082f24;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 18px;
+  box-shadow: 0 24px 90px rgba(0, 0, 0, 0.45);
+  animation: announcement-pop-in 0.24s ease-out;
+}
+.announcement-poster-link {
+  display: grid;
+  width: 100%;
+  min-height: 0;
+  place-items: center;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.announcement-poster {
+  display: block;
+  width: 100%;
+  max-height: calc(92vh - 62px);
+  object-fit: contain;
+}
+.announcement-close,
+.announcement-arrow {
+  position: absolute;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  color: white;
+  background: rgba(5, 31, 23, 0.82);
+  border: 1px solid rgba(255, 255, 255, 0.34);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.24);
+  cursor: pointer;
+  transition:
+    background 0.2s,
+    transform 0.2s;
+}
+.announcement-close:hover,
+.announcement-arrow:hover {
+  background: var(--green);
+}
+.announcement-close {
+  top: 20px;
+  right: 20px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+}
+.announcement-arrow {
+  top: 50%;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+.announcement-arrow-previous {
+  left: 20px;
+}
+.announcement-arrow-next {
+  right: 20px;
+}
+.announcement-pagination {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 30px;
+  padding-top: 8px;
+}
+.announcement-dot {
+  width: 7px;
+  height: 7px;
+  padding: 0;
+  background: rgba(255, 255, 255, 0.42);
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.announcement-dot.is-active {
+  width: 18px;
+  background: #c2dacb;
+  border-radius: 8px;
+}
+.announcement-pagination > span {
+  margin-left: 3px;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 9px;
+  font-weight: 700;
+}
+@keyframes announcement-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes announcement-pop-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+@keyframes promo-panel-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @media (max-width: 980px) {
@@ -1186,6 +1404,34 @@ button {
   }
 }
 @media (max-width: 720px) {
+  .announcement-backdrop {
+    padding: 12px;
+  }
+  .announcement-dialog {
+    width: min(480px, 100%);
+    max-height: 94vh;
+    padding: 8px 8px 7px;
+    border-radius: 13px;
+  }
+  .announcement-poster {
+    max-height: calc(94vh - 48px);
+  }
+  .announcement-close {
+    top: 14px;
+    right: 14px;
+    width: 34px;
+    height: 34px;
+  }
+  .announcement-arrow {
+    width: 36px;
+    height: 36px;
+  }
+  .announcement-arrow-previous {
+    left: 13px;
+  }
+  .announcement-arrow-next {
+    right: 13px;
+  }
   .shell {
     width: min(100% - 40px, 540px);
   }
@@ -1449,13 +1695,16 @@ button {
     flex-direction: column;
     line-height: 1.5;
   }
-  .floating-join {
+  .floating-promos {
     right: 14px;
     bottom: 14px;
-    padding: 11px 13px;
   }
-  .floating-join span {
-    display: none;
+  .floating-promo-panel {
+    width: min(340px, calc(100vw - 28px));
+    padding: 16px;
+  }
+  .floating-join {
+    padding: 11px 13px;
   }
 }
 @media (max-width: 380px) {

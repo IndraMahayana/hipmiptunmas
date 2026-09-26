@@ -7,6 +7,7 @@ import PartnersSection from "./components/PartnersSection.jsx";
 import ContactSection from "./components/ContactSection.jsx";
 import Footer from "./components/Footer.jsx";
 import FloatingContact from "./components/FloatingContact.jsx";
+import Announcement from "./components/Announcement.jsx";
 
 export default function App() {
   return (
@@ -22,6 +23,7 @@ export default function App() {
       </main>
       <Footer />
       <FloatingContact />
+      <Announcement />
     </>
   );
 }
