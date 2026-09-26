@@ -11,15 +11,15 @@ const partners = [
   {
     icon: Building2,
     title: "Institusi Pendidikan",
-    subtitle: "Kolaborasi kampus",
+    subtitle: "Sinergi Akademis & Kampus",
   },
   {
     icon: BriefcaseBusiness,
     title: "Pelaku Usaha",
-    subtitle: "Mentor & industri",
+    subtitle: "Praktisi & Dunia Industri",
   },
-  { icon: UsersRound, title: "Komunitas Muda", subtitle: "Gerakan bersama" },
-  { icon: Award, title: "Mitra Strategis", subtitle: "Dukungan bertumbuh" },
+  { icon: UsersRound, title: "Komunitas Muda", subtitle: "Organisasi & Komunitas Pemuda" },
+  { icon: Award, title: "Mitra Strategis", subtitle: "Dukungan Ekosistem Bisnis" },
 ];
 
 export default function PartnersSection() {
@@ -31,18 +31,19 @@ export default function PartnersSection() {
             <span className="eyebrow-dot" /> 03 / KOLABORASI
           </div>
           <h2>
-            Lebih banyak
+            Lebih Banyak Hal
             <br />
-            <em>yang bisa kita</em>
+            <em>Bisa Kita Wujudkan</em>
             <br />
-            wujudkan.
+            Bersama.
           </h2>
           <p>
-            Kami percaya, langkah besar lahir dari kerja bersama. Mari tumbuh
-            dan menciptakan peluang yang bermanfaat untuk lebih banyak orang.
+            Kami percaya gagasan besar tercipta melalui sinergi. Mari
+            berkolaborasi menciptakan peluang baru dan dampak positif yang lebih
+            luas.
           </p>
           <a className="button button-outline-light" href="#kontak">
-            Jadi partner kami <ArrowUpRight size={16} />
+            Menjadi Mitra Kami <ArrowUpRight size={16} />
           </a>
         </div>
         <div className="partner-cards">
@@ -60,7 +61,7 @@ export default function PartnersSection() {
           ))}
           <div className="partner-note">
             <span className="partner-note-mark">✳</span>
-            <span>Terbuka untuk kolaborasi lintas bidang dan komunitas.</span>
+            <span>Terbuka untuk kolaborasi lintas disiplin, instansi, dan komunitas.</span>
           </div>
         </div>
       </div>
